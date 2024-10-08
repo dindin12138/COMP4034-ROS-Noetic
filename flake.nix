@@ -27,8 +27,11 @@
                 turtlebot3-description
                 turtlebot3-teleop
                 turtlebot3-gazebo
+                turtlebot3-bringup
                 gazebo-plugins
                 xacro
+                catkin
+                rviz
                 # ... other ROS packages
               ];
             })
