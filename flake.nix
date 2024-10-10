@@ -16,6 +16,9 @@
           name = "COMP4034-ROS-Noetic";
           shellHook = ''
             export TURTLEBOT3_MODEL=waffle
+            if [ -f ./catkin_ws/devel/setup.bash ]; then
+                source ./catkin_ws/devel/setup.bash
+            fi
             exec zsh
           '';
           packages = [
