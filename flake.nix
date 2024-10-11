@@ -16,6 +16,8 @@
           name = "COMP4034-ROS-Noetic";
           shellHook = ''
             export TURTLEBOT3_MODEL=waffle
+            export QT_PLUGIN_PATH=""
+            export QT_QPA_PLATFORM=xcb
             if [ -f ./catkin_ws/devel/setup.bash ]; then
                 source ./catkin_ws/devel/setup.bash
             fi
