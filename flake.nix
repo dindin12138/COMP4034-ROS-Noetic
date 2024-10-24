@@ -25,6 +25,8 @@
           '';
           packages = [
             pkgs.glibcLocales
+            pkgs.python311Packages.numpy # Add numpy
+            pkgs.opencv # Add OpenCV
             # ... other non-ROS packages
             (with pkgs.rosPackages.noetic; buildEnv {
               paths = [
@@ -37,6 +39,8 @@
                 xacro
                 catkin
                 rviz
+                vision-opencv
+                image-proc
                 # ... other ROS packages
               ];
             })
